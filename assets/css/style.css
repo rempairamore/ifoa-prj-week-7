@@ -1,0 +1,35 @@
+header img {
+    width: 7em;
+}
+
+/* .cardsingola img {
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    max-height: 60%;
+    min-height: 60%;
+    object-fit: fill;
+  } */
+
+/* Modifica l'altezza dell'immagine nelle card */
+.cardsingola .card img {
+    height: 40vh; 
+    object-fit: contain;
+}
+
+.cardsingola p {
+    font-size: 0.8em;
+    font-weight: 200;
+}
+
+
+.cardsingola .card .card-body {
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+}
+
+.cardsingola .card .btn-group {
+    justify-content: center; 
+}

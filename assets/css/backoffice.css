@@ -1,0 +1,12 @@
+#logoPrincipale {
+    width: 9em;
+}
+
+.titolo h3 {
+    font-size: 7vw;
+    text-align: center;
+}
+
+.gridMia .row {
+    border: 2px solid rgba(112.520718,44.062154,249.437846, 0.3);
+}
