@@ -1,0 +1,23 @@
+.sinistra img {
+    width: 25vw;
+}
+
+.nomeOggetto span {
+    font-size: 5vw;
+}
+
+.nomeOggetto p {
+    font-size: 1vw;
+    font-weight: 200;
+}
+
+.dettagliOggetto {
+    font-size: 1.7em;
+    font-weight: 300;
+}
+
+.prezzoOggetto span {
+    font-size: 3vw;
+    color: brown;
+    font-weight: 100;
+}

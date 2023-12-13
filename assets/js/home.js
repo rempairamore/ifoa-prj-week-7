@@ -1,5 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
-    loadImmagini()
+
+    setTimeout(function() {
+      loadImmagini();
+    }, 1500);
+  
     const loginButton = document.getElementById('loginButton');
 
     loginButton.addEventListener('click', function() {
@@ -47,7 +51,6 @@ function loadImmagini() {
         
         let divPadre = document.querySelector('#padreCard');
         divPadre.innerHTML = '';
-        console.log(json.photos);
         json.forEach(element => {
             let divCol = document.createElement('div');
             divCol.className = 'cardsingola col-md-4 d-flex align-items-stretch img-fluid';
@@ -73,5 +76,19 @@ function loadImmagini() {
     })
     .catch(error => console.log(error + " c'è un errore nella creazione delle cards"))
     
+    inizioEventListner()
 
 } 
+
+function inizioEventListner() {
+  let divContenitore = document.querySelector('main')
+  divContenitore.addEventListener('click', (e) => {
+    e.preventDefault();
+    if(e.target.className === 'btn btn-sm btn-success text-white btn-outline-secondary') {
+      let idElemento = e.target.parentNode.parentNode.childNodes[3].innerText;
+
+      sessionStorage.setItem('details', idElemento)
+      window.location.href = "details.html";
+    }
+  })
+}

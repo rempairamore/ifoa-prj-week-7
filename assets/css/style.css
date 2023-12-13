@@ -1,5 +1,5 @@
 header img {
-    width: 7em;
+    width: 25vw;
 }
 
 /* .cardsingola img {
@@ -32,4 +32,9 @@ header img {
 
 .cardsingola .card .btn-group {
     justify-content: center; 
+}
+
+.spinner-border {
+    width: 4em;
+    height: 4em;
 }

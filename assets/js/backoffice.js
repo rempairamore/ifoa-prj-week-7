@@ -177,14 +177,17 @@ function creazioneGriglia(oggettoJson) {
 function handleGridClick(e) {
     e.preventDefault();
     if(e.target.className === 'btn btn-primary btn-sm') {
-        console.log("Details");
+        // console.log("Details");
+        let idElemento = e.target.parentNode.parentNode.childNodes[3].innerText;
+        sessionStorage.setItem('details', idElemento)
+        window.location.href = "details.html";
     }
     if(e.target.className === 'btn btn-warning btn-sm') {
-        console.log("Modify");
+        // console.log("Modify");
         modifyObject(e)
     }
     if(e.target.className === 'btn btn-danger btn-sm') {
-        console.log("Delete");
+        // console.log("Delete");
         let idOggetto = e.target.parentNode.parentNode.childNodes[3].innerText;
 
         removeObject(idOggetto)
